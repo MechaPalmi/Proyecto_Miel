@@ -6,10 +6,14 @@
     width: 35px; /* ancho icono redes */
     height: 35px;
 }
-footer {
+ul{
+    list-style: none;
+}
+footer {/* footer */
     display: grid;
-    grid-template-areas: "indice redes"
-                        "indice redes derechos";
+    grid-template-areas: "indice redes derechos" 
+                        "indice redes derechos"
+                        "indice redes";
     background-color: antiquewhite;
 }
 .footer_redes{
@@ -24,7 +28,6 @@ footer {
 .footer__indice ul li{
     font-size: 16px;
     text-decoration: none;
-    list-style: none;
 }
 a {
     text-decoration: none;
@@ -32,30 +35,40 @@ a {
 .header__lista {
     display: flex;
     list-style: none; /* borramos las viñetas */
-    padding: 0 16px;
+    padding: 20px;
     flex-wrap: flex-end;
     justify-content: flex-end;
     flex-grow: 1;
+}
+.header__item{
+    display: inline;
+    padding: 10px;
 }
 header{
     background-color: darkgray;
     height: 50px;
 }
 .titulo__principal{
-    background-color: black;
-    color: aliceblue;
+    display: flex;
+    background-color: rgba(73, 69, 69, 0.192);
+    color: rgb(12, 13, 14);
+    justify-content: center;
 }
 .portada{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100vw
+    width: 97vw
+}
+.titulo__producto{
+    display: flex;
+    align-items: center;
 }
 .imagen__portada {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    width: 100vw
+    width: 97vw
 }
 body {
     font-family: 'Roboto', sans-serif;
@@ -142,4 +155,65 @@ body {
     justify-content: center;
     align-items: center;
     color: white
+}
+/* media querie tablet */
+@media (min-width: 576px) and (max-width: 992px){
+    
+}
+/* media querie celular */
+@media (min-width: 320px) and (max-width: 575px){
+.header__lista{
+    flex-direction: column;
+    flex-grow: 0;
+    align-items: center;
+}
+header{
+    height: auto;
+}
+.titulo__producto{
+    display: flex;
+    align-items: center;
+}
+.productos__grid { 
+    width: 100vw;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "miel propoleo bee_wraps"
+                        "cera propoleo apicultura"
+                        "caramelos_miel caramelos_miel cursos";
+}                        
+                        .miel{
+                            grid-column:1/2 ;
+                            grid-row:1/2 ;
+                        }
+                        .propoleo {
+                            grid-column:1/2 ;
+                            grid-row:2/3 ;
+                        }
+                        .bee_wraps {
+                            grid-column:1/2 ;
+                            grid-row:3/4 ;
+                        }
+                        .cera {
+                            grid-column:1/2 ;
+                            grid-row:4/5 ;
+                        }
+                        .apicultura {
+                            grid-column:1/2 ;
+                            grid-row:5/6 ;
+                        }
+                        .caramelos_miel {
+                            grid-column:1/2 ;
+                            grid-row:6/6 ;
+                        }
+                        .cursos {
+                            grid-column:1/2 ;
+                            grid-row:6/7 ;
+                        }
+footer {/* footer */
+        grid-template-areas: "indice" 
+        "redes"
+        "dderechos";
+}
 }
