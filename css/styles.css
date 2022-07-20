@@ -45,12 +45,11 @@ a {
     padding: 10px;
 }
 header{
-    background-color: darkgray;
     height: 50px;
 }
 .titulo__principal{
     display: flex;
-    background-color: rgba(73, 69, 69, 0.192);
+    background-color: linear-gradient(to rgba(73, 69, 69, 0.192) yellow) ;
     color: rgb(12, 13, 14);
     justify-content: center;
 }
@@ -155,10 +154,6 @@ body {
     justify-content: center;
     align-items: center;
     color: white
-}
-/* media querie tablet */
-@media (min-width: 576px) and (max-width: 992px){
-    
 }
 /* media querie celular */
 @media (min-width: 320px) and (max-width: 575px){
