@@ -11,21 +11,43 @@
     <link rel="shortcut icon" href="../resourses/favicon.ico" type="image/x-icon">
      <!-- ANIMACION -->
      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <!-- CSS -->
+    <!-- CSS Bootstrap
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+     <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
     <title>Miel</title>
 </head>
 <body>
     <header>
-        <nav> <!-- navegacion -->
-            <ul class="header__lista">
-                <li><a class="header__item" href="../index.html">Inicio</a></li>
-                <li><a class="header__item" href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a class="header__item" href="productos.html">Productos</a></li>
-                <li><a class="header__item" href="conservacion.html">Conservacion</a></li>
-                <li><a class="header__item" href="contacto.html">Contacto</a></li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html">Inicio</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="sobre-nosotros.html">Sobre Nosotros</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="productos.html">Productos</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="conservacion.html">Conservacion</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                  </li>
+                </ul>
+                <form class="d-flex" role="search">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
     </header>
     <main>
         <section>
@@ -62,5 +84,7 @@
             <span>Miel (c) Todos los derechos reservados 2022</span>
         </div>
     </footer>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 </body>
 </html>
