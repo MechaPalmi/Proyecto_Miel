@@ -1,0 +1,23 @@
+footer {/* footer */
+    display: grid;
+    grid-template-areas: "indice redes derechos" 
+                        "indice redes derechos"
+                        "indice redes";
+    background-color: antiquewhite;
+    .footer{
+        &_redes{
+            grid-area: redes;
+        }
+        &__indice{
+            grid-area: indice;
+        }
+        &__derechos{
+            grid-area: derechos;
+        }
+        &__indice ul li{
+            font-size: 8px;
+            text-decoration: none;
+        
+    }
+}
+}

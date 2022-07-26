@@ -1,217 +1,257 @@
-*{
-    margin: 0px /* margen externo */
-    padding 0px; /* maren interno */
-}
-.footer__iconos {/* redes sociales */
-    width: 30px; /* ancho icono redes */
-    height: 30px;
-}
-ul{
-    list-style: none;
-}
-footer {/* footer */
-    display: grid;
-    grid-template-areas: "indice redes derechos" 
-                        "indice redes derechos"
-                        "indice redes";
-    background-color: antiquewhite;
-}
-.footer_redes{
-    grid-area: redes;
-}
-.footer__indice{
-    grid-area: indice;
-}
-.footer__derechos{
-    grid-area: derechos;
-}
-.footer__indice ul li{
+@charset "UTF-8";
+footer {
+  /* footer */
+  display: grid;
+  grid-template-areas: "indice redes derechos"  "indice redes derechos" "indice redes";
+  background-color: antiquewhite; }
+  footer .footer_redes {
+    grid-area: redes; }
+  footer .footer__indice {
+    grid-area: indice; }
+  footer .footer__derechos {
+    grid-area: derechos; }
+  footer .footer__indice ul li {
     font-size: 8px;
-    text-decoration: none;
-}
-a {
-    text-decoration: none;
-}
-.header__lista {
-    display: flex;
-    list-style: none; /* borramos las viñetas */
-    padding: 20px;
-    flex-wrap: flex-end;
-    justify-content: flex-end;
-    flex-grow: 1;
-}
-.header__item{
-    display: inline;
-    padding: 10px;
-}
-header{
-    height: 50px;
-}
-.titulo__principal{
-    display: flex;
-    background-color: linear-gradient(to rgba(73, 69, 69, 0.192) yellow) ;
-    color: rgb(12, 13, 14);
-    justify-content: center;
-}
-.portada{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 90vw;
-    margin: auto;
-}
-.titulo__producto{
-    display: flex;
-    align-items: center;
-}
-.imagen__portada {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    width: 90vw;
-    margin: auto;
-}
-body {
-    font-family: 'Roboto', sans-serif;
-    background-color: rgb(224, 223, 121);
-}
-.parrafo{
-    background-color: rgb(248, 228, 99);
-    font-family: 'Roboto', sans-serif;
-    padding: 0 10px;
-    text-align: center;
-}
-.proteger{
-    background-color: rgb(189, 189, 82);
-    font-family: 'Roboto', sans-serif;
-    color: black;
-}
-.h1 {
-    font-family: 'Josefin Sans', sans-serif;
-}
-.productos{
-    width: 35px;
-}
-.productos__grid { /* grilla de productos */
-    display:grid;
-    width: 100vw;
-    height: 100vh;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-template-areas: "miel propoleo bee_wraps"
-                        "cera propoleo apicultura"
-                        "caramelos_miel caramelos_miel cursos";
-}
-.miel{
+    text-decoration: none; }
+
+.productos__grid {
+  /* grilla de productos */
+  display: grid;
+  width: 100vw;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-areas: "miel propoleo bee_wraps" "cera propoleo apicultura" "caramelos_miel caramelos_miel cursos"; }
+  .productos__grid .miel {
     grid-area: miel;
     background-image: url("../resourses/miel.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-.propoleo {
+    background-repeat: no-repeat; }
+  .productos__grid .propoleo {
     grid-area: propoleo;
     background-image: url("../resourses/propoleo.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-.bee_wraps {
+    background-repeat: no-repeat; }
+  .productos__grid .bee_wraps {
     grid-area: bee_wraps;
     background-image: url("../resourses/bee_wraps.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-.cera {
+    background-repeat: no-repeat; }
+  .productos__grid .cera {
     grid-area: cera;
     background-image: url("../resourses/cera.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-.apicultura {
+    background-repeat: no-repeat; }
+  .productos__grid .apicultura {
     grid-area: apicultura;
     background-image: url("../resourses/apicultura.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-.caramelos_miel {
+    background-repeat: no-repeat; }
+  .productos__grid .caramelos_miel {
     grid-area: caramelos_miel;
     background-image: url("../resourses/caramelos_miel.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-.cursos {
+    background-repeat: no-repeat; }
+  .productos__grid .cursos {
     grid-area: cursos;
     background-image: url("../resourses/cursos.jpg");
     background-position: center;
     background-size: cover;
-    background-repeat: no-repeat;
-}
-.productos__texto{ /* texto galeria */
+    background-repeat: no-repeat; }
+  .productos__grid .productos__texto {
+    /* texto galeria */
     display: flex;
     font-size: 32px;
     justify-content: center;
     align-items: center;
-    color: white
-}
+    color: white; }
+
 /* media querie celular */
-@media (min-width: 320px) and (max-width: 575px){
-.header__lista{
+@media (min-width: 320px) and (max-width: 575px) {
+  .header__lista {
     flex-direction: column;
     flex-grow: 0;
-    align-items: center;
-}
-header{
-    height: auto;
-}
-.titulo__producto{
+    align-items: center; }
+  header {
+    height: auto; }
+  .titulo__producto {
     display: flex;
-    align-items: center;
-}
-.productos__grid { 
+    align-items: center; }
+  .productos__grid {
     width: 100vw;
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
-    grid-template-areas: "miel propoleo bee_wraps"
-                        "cera propoleo apicultura"
-                        "caramelos_miel caramelos_miel cursos";
-}                        
-                        .miel{
-                            grid-column:1/2 ;
-                            grid-row:1/2 ;
-                        }
-                        .propoleo {
-                            grid-column:1/2 ;
-                            grid-row:2/3 ;
-                        }
-                        .bee_wraps {
-                            grid-column:1/2 ;
-                            grid-row:3/4 ;
-                        }
-                        .cera {
-                            grid-column:1/2 ;
-                            grid-row:4/5 ;
-                        }
-                        .apicultura {
-                            grid-column:1/2 ;
-                            grid-row:5/6 ;
-                        }
-                        .caramelos_miel {
-                            grid-column:1/2 ;
-                            grid-row:6/6 ;
-                        }
-                        .cursos {
-                            grid-column:1/2 ;
-                            grid-row:6/7 ;
-                        }
-footer {/* footer */
-        grid-template-areas: "indice" 
-        "redes"
-        "dderechos";
-}
-}
+    grid-template-areas: "miel propoleo bee_wraps" "cera propoleo apicultura" "caramelos_miel caramelos_miel cursos"; }
+  .miel {
+    grid-column: 1/2;
+    grid-row: 1/2; }
+  .propoleo {
+    grid-column: 1/2;
+    grid-row: 2/3; }
+  .bee_wraps {
+    grid-column: 1/2;
+    grid-row: 3/4; }
+  .cera {
+    grid-column: 1/2;
+    grid-row: 4/5; }
+  .apicultura {
+    grid-column: 1/2;
+    grid-row: 5/6; }
+  .caramelos_miel {
+    grid-column: 1/2;
+    grid-row: 6/6; }
+  .cursos {
+    grid-column: 1/2;
+    grid-row: 6/7; }
+  footer {
+    /* footer */
+    grid-template-areas: "indice"  "redes" "derechos"; } }
+
+* {
+  margin: 0px padding 0px;
+  /* maren interno */ }
+
+ul {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.footer__iconos {
+  /* redes sociales */
+  width: 35px;
+  /* ancho icono redes */
+  height: 35px; }
+
+header {
+  height: 50px; }
+  header .header__lista {
+    display: flex;
+    list-style: none;
+    /* borramos las viñetas */
+    padding: 20px;
+    flex-wrap: flex-end;
+    justify-content: flex-end;
+    flex-grow: 1; }
+  header .header__item {
+    display: inline;
+    padding: 10px; }
+
+.titulo__principal {
+  display: flex;
+  background-color: linear-gradient(to rgba(73, 69, 69, 0.192) yellow);
+  color: #0c0d0e;
+  justify-content: center; }
+
+.portada {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: auto; }
+
+.titulo__producto {
+  display: flex;
+  align-items: center; }
+
+.imagen__portada {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: auto; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #e0df79; }
+
+.parrafo {
+  background-color: #f8e463;
+  font-family: 'Roboto', sans-serif;
+  padding: 0 10px;
+  text-align: center; }
+
+.proteger {
+  background-color: #e0df79;
+  font-family: 'Roboto', sans-serif;
+  color: black; }
+
+.h1 {
+  font-family: 'Josefin Sans', sans-serif; }
+
+.productos {
+  width: 35px; }
+
+.portada__somosnosotros {
+  display: flex;
+  width: 70vw;
+  height: 70vh; }
+
+.portada__contacto {
+  display: flex;
+  width: 70vw;
+  height: 70vh; }
+
+.miel {
+  grid-area: miel;
+  background-image: url("../resourses/miel.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.propoleo {
+  grid-area: propoleo;
+  background-image: url("../resourses/propoleo.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.bee_wraps {
+  grid-area: bee_wraps;
+  background-image: url("../resourses/bee_wraps.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.cera {
+  grid-area: cera;
+  background-image: url("../resourses/cera.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.apicultura {
+  grid-area: apicultura;
+  background-image: url("../resourses/apicultura.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.caramelos_miel {
+  grid-area: caramelos_miel;
+  background-image: url("../resourses/caramelos_miel.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.cursos {
+  grid-area: cursos;
+  background-image: url("../resourses/cursos.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.productos__texto {
+  /* texto galeria */
+  display: flex;
+  font-size: 32px;
+  justify-content: center;
+  align-items: center;
+  color: white; }

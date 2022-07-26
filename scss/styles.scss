@@ -1,0 +1,147 @@
+@import "variables";
+@import "footer";
+@import "productos";
+@import "mediaqueries";
+*{
+    margin: 0px /* margen externo */
+    padding 0px; /* maren interno */
+}
+ul{
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.footer__iconos{/* redes sociales */
+    width: 35px; /* ancho icono redes */
+    height: 35px;
+}
+header{
+    height: 50px;
+    .header{
+    &__lista {
+        display: flex;
+        list-style: none; /* borramos las viñetas */
+        padding: 20px;
+        flex-wrap: flex-end;
+        justify-content: flex-end;
+        flex-grow: 1;
+    }
+    &__item{
+        display: inline;
+        padding: 10px;
+    }
+}
+}
+.titulo__principal{
+    display: flex;
+    background-color: linear-gradient(to rgba(73, 69, 69, 0.192) yellow) ;
+    color: rgb(12, 13, 14);
+    justify-content: center;
+}
+.portada{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: auto;
+}
+.titulo__producto{
+    display: flex;
+    align-items: center;
+}
+.imagen__portada {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 90vw;
+    margin: auto;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: $color-principal
+}
+.parrafo{
+    background-color: rgb(248, 228, 99);
+    font-family: 'Roboto', sans-serif;
+    padding: 0 10px;
+    text-align: center;
+}
+.proteger{
+    background-color: $color-principal;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+}
+.h1 {
+    font-family: 'Josefin Sans', sans-serif;
+}
+.productos{
+    width: 35px;
+}
+.portada__somosnosotros{
+    display: flex;
+    width: 70vw;
+    height: 70vh;
+}
+.portada__contacto{
+        display: flex;
+        width: 70vw;
+        height: 70vh;
+}
+.miel{
+    grid-area: miel;
+    background-image: url("../resourses/miel.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.propoleo {
+    grid-area: propoleo;
+    background-image: url("../resourses/propoleo.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.bee_wraps {
+    grid-area: bee_wraps;
+    background-image: url("../resourses/bee_wraps.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cera {
+    grid-area: cera;
+    background-image: url("../resourses/cera.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.apicultura {
+    grid-area: apicultura;
+    background-image: url("../resourses/apicultura.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.caramelos_miel {
+    grid-area: caramelos_miel;
+    background-image: url("../resourses/caramelos_miel.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.cursos {
+    grid-area: cursos;
+    background-image: url("../resourses/cursos.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.productos__texto{ /* texto galeria */
+    display: flex;
+    font-size: 32px;
+    justify-content: center;
+    align-items: center;
+    color: white
+}
+
