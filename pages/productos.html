@@ -2,7 +2,10 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="COLMENAS, APICULTURA, MIEL, PRODUCTOS, CERA, PROPOLEO, JALEA REAL, CARAMELOS DE MIEL, BEE WRAPS, CURSOS">
+    <meta name="description" content="Tenemos una variada seleción de productos para ofrecerles">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +19,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
      <!-- CSS -->
     <link rel="stylesheet" href="../css/styles.css">
-    <title>Miel</title>
+    <title>Nuestros Productos</title>
 </head>
 <body>
     <header> <!-- navegacion -->
@@ -50,34 +53,54 @@
             </nav>
     </header>
     <main>
-        <section class:"titulo__producto">
+        <section>
         <h1>Nuestros Productos</h1><!-- Productos en venta -->
         <p> Conozca la gran variedad de productos que tenemos disponibles para usted.</p>
         </section>
-        <section>
-            <div class="productos__grid">
-            <article class="productos__texto miel">
-                <p>Miel</p>
-            </article>
-            <article class="productos__texto bee_wraps">
-                <p>Bee Wraps</p>
-            </article>
-            <article class="productos__texto propoleo">
-                <p>Propoleo</p>
-            </article>
-            <article class="productos__texto cera">
-                <p>Cera</p>
-            </article>
-            <article class="productos__texto apicultura">
-                <p>Productos para Apricultura</p>
-            </article>
-            <article class="productos__texto caramelos_miel">
-                <p>Caramelos de Miel</p>
-            </article>
-            <article class="productos__texto cursos">
-                <p>Nuestros Cursos</p>
-            </article>
+        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 1"></button>
+            </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="../resourses/miel.jpg" class="carrousel__altura d-block w-100" alt="Miel Orgánica">
+          </div>
+          <div class="carousel-item">
+            <img src="../resourses/bee_wraps.jpg" class="carrousel__altura d-block w-100" alt="Bee Wraps">
+          </div>
+          <div class="carousel-item">
+            <img src="../resourses/apicultura.jpg" class="carrousel__altura d-block w-100" alt="Productos para Apicultura">
+          </div>
+          <div class="carousel-item">
+            <img src="../resourses/caramelos_miel.jpg" class="carrousel__altura d-block w-100" alt="Caramelos de Miel">
+          </div>
+          <div class="carousel-item">
+            <img src="../resourses/cera.jpg" class="carrousel__altura d-block w-100" alt="Cera de Abejas">
+          </div>
+          <div class="carousel-item">
+            <img src="../resourses/propoleo.jpg" class="carrousel__altura d-block w-100" alt="Polen">
+          </div>
+          <div class="carousel-item">
+            <img src="../resourses/cursos.jpg" class="carrousel__altura d-block w-100" alt="Nuestros Cursos">
+          </div>
+          </div>
         </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
         </section>
     </main>
     <footer> <!-- pie de pagina -->
