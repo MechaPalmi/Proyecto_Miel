@@ -1,5 +1,6 @@
 @import "variables";
 @import "footer";
+@import "operators";
 @import "productos";
 *{
     margin: 0px /* margen externo */
@@ -8,8 +9,12 @@
 ul{
     list-style: none;
 }
-a {
+a :hover{
     text-decoration: none;
+    color: blueviolet;
+}   
+.parrafo__polen{
+    color:black
 }
 .carrousel__altura{
     height: 700px;
@@ -34,6 +39,9 @@ header{
         padding: 10px;
     }
 }
+}
+.card-body {
+    background-color: bisque;
 }
 .titulo__principal{
     display: flex;
@@ -65,9 +73,13 @@ body {
 }
 .parrafo{
     background-color: rgb(248, 228, 99);
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Oleo Script Swash Caps', cursive;
     padding: 0 10px;
     text-align: center;
+}
+.parrafo__sobrenosotros {
+    font-family: 'Oleo Script Swash Caps', cursive;
+    color: black;
 }
 .proteger{
     background-color: $color-principal;
@@ -87,54 +99,40 @@ body {
         width: 70vw;
         height: 70vh;
 }
-.miel{
+.miel :hover{
+    @extend .background-centrado;
     grid-area: miel;
     background-image: url("../resourses/miel.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.propoleo {
+.propoleo :hover{
+    @extend .background-centrado;
     grid-area: propoleo;
     background-image: url("../resourses/propoleo.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.bee_wraps {
+.bee_wraps :hover{
+    @extend .background-centrado;
     grid-area: bee_wraps;
     background-image: url("../resourses/bee_wraps.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.cera {
+.cera :hover{
+    @extend .background-centrado;
     grid-area: cera;
     background-image: url("../resourses/cera.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.apicultura {
+.apicultura :hover{
+    @extend .background-centrado;
     grid-area: apicultura;
     background-image: url("../resourses/apicultura.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.caramelos_miel {
+.caramelos_miel :hover{
+    @extend .background-centrado;
     grid-area: caramelos_miel;
     background-image: url("../resourses/caramelos_miel.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
-.cursos {
+.cursos :hover{
+    @extend .background-centrado;
     grid-area: cursos;
     background-image: url("../resourses/cursos.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
 }
 
 /* media querie celular productos */

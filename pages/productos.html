@@ -54,63 +54,82 @@
     </header>
     <main>
         <section>
-        <h1>Nuestros Productos</h1><!-- Productos en venta -->
+        <h1 class="titulo__principal">Nuestros Productos</h1><!-- Productos en venta -->
         <p> Conozca la gran variedad de productos que tenemos disponibles para usted.</p>
         </section>
-        <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="5" aria-label="Slide 6"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="6" aria-label="Slide 7"></button>
-              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="7" aria-label="Slide 1"></button>
+        <section>
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="../resourses/miel.jpg" class="d-block w-100 carrousel__altura" alt="miel">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Miel</h5>
+                  <p>Miel de primera calidad</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../resourses/propoleo.jpg" class="d-block w-100 carrousel__altura" alt="polen">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Polen</h5>
+                  <p class="parrafo__polen">Aporta vitaminas y minerales</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../resourses/caramelos_miel.jpg" class="d-block w-100 carrousel__altura" alt="caramelos miel">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Caramelos de Miel</h5>
+                  <p>Probá nuestros riquísimos caramelos</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../resourses/bee_wraps.jpg" class="d-block w-100 carrousel__altura" alt="bee wraps">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Bee Wraps</h5>
+                  <p>Conservá tus alimentos de forma natural sin usar film</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../resourses/cera.jpg" class="d-block w-100 carrousel__altura" alt="cera abejas">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Cera de Abejas</h5>
+                  <p>Gran poder hidratante y emoliente</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../resourses/apicultura.jpg" class="d-block w-100 carrousel__altura" alt="herramientas apicultura">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Herramientas para Apicultura</h5>
+                  <p>Acá podés conseguir todo para tus colmenas</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="../resourses/cursos.jpg" class="d-block w-100 carrousel__altura" alt="cursos apicultura">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Cursos</h5>
+                  <p>Vení a aprender con nosotros sobre apicultura</p>
+                </div>
+              </div>
             </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="../resourses/miel.jpg" class="carrousel__altura d-block w-100" alt="Miel Orgánica">
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
           </div>
-          <div class="carousel-item">
-            <img src="../resourses/bee_wraps.jpg" class="carrousel__altura d-block w-100" alt="Bee Wraps">
-          </div>
-          <div class="carousel-item">
-            <img src="../resourses/apicultura.jpg" class="carrousel__altura d-block w-100" alt="Productos para Apicultura">
-          </div>
-          <div class="carousel-item">
-            <img src="../resourses/caramelos_miel.jpg" class="carrousel__altura d-block w-100" alt="Caramelos de Miel">
-          </div>
-          <div class="carousel-item">
-            <img src="../resourses/cera.jpg" class="carrousel__altura d-block w-100" alt="Cera de Abejas">
-          </div>
-          <div class="carousel-item">
-            <img src="../resourses/propoleo.jpg" class="carrousel__altura d-block w-100" alt="Polen">
-          </div>
-          <div class="carousel-item">
-            <img src="../resourses/cursos.jpg" class="carrousel__altura d-block w-100" alt="Nuestros Cursos">
-          </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
+    </section>
         </section>
     </main>
     <footer> <!-- pie de pagina -->
         <div class="fotter__indice">
             <ul>
-                <li><a href="index.html">Inicio</a></li>
-                <li><a href="pages/sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="pages.productos.html">Productos</a></li>
-                <li><a href="pages.conservacion.html">Conservacion</a></li>
-                <li><a href="pages.contacto.html">Contacto</a></li>
+                <li><a href="../pages/index.html">Inicio</a></li>
+                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
+                <li><a href="productos.html">Productos</a></li>
+                <li><a href="conservacion.html">Conservacion</a></li>
+                <li><a href="contacto.html">Contacto</a></li>
             </ul>  
         </div>
         <div class="footer__derechos">
@@ -118,7 +137,7 @@
             <a href="https://es-la.facebook.com/"><img class="footer__iconos" src="../resourses/facebook-brands.svg"></a>
             <a href="https://www.instagram.com/"><img class="footer__iconos" src="../resourses/instagram-brands.svg"></a>
             <a href="https://twitter.com/?lang=es"><img class="footer__iconos" src="../resourses/twitter-brands.svg"></a>
-            <h3>Síguenos en nuestras redes</h3>
+            <h4>Síguenos en nuestras redes</h4>
         </div>
         <div class="footer__derechos">
             <span>Miel (c) Todos los derechos reservados 2022</span>

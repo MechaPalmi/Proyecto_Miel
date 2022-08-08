@@ -14,6 +14,21 @@ footer {
     font-size: 8px;
     text-decoration: none; }
 
+.color-twitter {
+  background-color: yellow; }
+
+.color-facebook {
+  background-color: black; }
+
+.color-instagrm {
+  background-color: grey; }
+
+/* extend */
+.background-centrado, .miel :hover, .propoleo :hover, .bee_wraps :hover, .cera :hover, .apicultura :hover, .caramelos_miel :hover, .cursos :hover {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
 .productos {
   width: 35px; }
   .productos__texto {
@@ -88,8 +103,12 @@ footer {
 ul {
   list-style: none; }
 
-a {
-  text-decoration: none; }
+a :hover {
+  text-decoration: none;
+  color: blueviolet; }
+
+.parrafo__polen {
+  color: black; }
 
 .carrousel__altura {
   height: 700px; }
@@ -113,6 +132,9 @@ header {
   header .header__item {
     display: inline;
     padding: 10px; }
+
+.card-body {
+  background-color: bisque; }
 
 .titulo__principal {
   display: flex;
@@ -144,9 +166,13 @@ body {
 
 .parrafo {
   background-color: #f8e463;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oleo Script Swash Caps', cursive;
   padding: 0 10px;
   text-align: center; }
+
+.parrafo__sobrenosotros {
+  font-family: 'Oleo Script Swash Caps', cursive;
+  color: black; }
 
 .proteger {
   background-color: #e0df79;
@@ -166,54 +192,33 @@ body {
   width: 70vw;
   height: 70vh; }
 
-.miel {
+.miel :hover {
   grid-area: miel;
-  background-image: url("../resourses/miel.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/miel.jpg"); }
 
-.propoleo {
+.propoleo :hover {
   grid-area: propoleo;
-  background-image: url("../resourses/propoleo.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/propoleo.jpg"); }
 
-.bee_wraps {
+.bee_wraps :hover {
   grid-area: bee_wraps;
-  background-image: url("../resourses/bee_wraps.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/bee_wraps.jpg"); }
 
-.cera {
+.cera :hover {
   grid-area: cera;
-  background-image: url("../resourses/cera.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/cera.jpg"); }
 
-.apicultura {
+.apicultura :hover {
   grid-area: apicultura;
-  background-image: url("../resourses/apicultura.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/apicultura.jpg"); }
 
-.caramelos_miel {
+.caramelos_miel :hover {
   grid-area: caramelos_miel;
-  background-image: url("../resourses/caramelos_miel.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/caramelos_miel.jpg"); }
 
-.cursos {
+.cursos :hover {
   grid-area: cursos;
-  background-image: url("../resourses/cursos.jpg");
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
+  background-image: url("../resourses/cursos.jpg"); }
 
 /* media querie celular productos */
 @media (min-width: 320px) and (max-width: 575px) {

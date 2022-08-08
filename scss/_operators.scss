@@ -1,0 +1,16 @@
+$redes:( /* maps */
+twitter: yellow,
+facebook: black,
+instagrm: grey,
+);
+@each $name, $color in $redes{
+    .color-#{$name} {
+        background-color: #{$color};
+    }
+}
+/* extend */
+.background-centrado {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
