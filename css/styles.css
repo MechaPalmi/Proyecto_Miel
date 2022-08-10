@@ -3,7 +3,7 @@ footer {
   /* footer */
   display: grid;
   grid-template-areas: "indice redes derechos"  "indice redes derechos" "indice redes";
-  background-color: antiquewhite; }
+  background-color: #ecece1; }
   footer .footer_redes {
     grid-area: redes; }
   footer .footer__indice {
@@ -101,11 +101,12 @@ footer {
   /* maren interno */ }
 
 ul {
-  list-style: none; }
+  list-style: none;
+  color: black; }
 
 a :hover {
   text-decoration: none;
-  color: blueviolet; }
+  color: black; }
 
 .parrafo__polen {
   color: black; }
@@ -134,11 +135,10 @@ header {
     padding: 10px; }
 
 .card-body {
-  background-color: bisque; }
+  background-color: #f5f4ce; }
 
 .titulo__principal {
   display: flex;
-  background-color: linear-gradient(to rgba(73, 69, 69, 0.192) yellow);
   color: #0c0d0e;
   justify-content: center; }
 
@@ -161,7 +161,7 @@ header {
   margin: auto; }
 
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oleo Script Swash Caps', cursive;
   background-color: #e0df79; }
 
 .parrafo {
@@ -176,11 +176,11 @@ body {
 
 .proteger {
   background-color: #e0df79;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Oleo Script Swash Caps', cursive;
   color: black; }
 
 .h1 {
-  font-family: 'Josefin Sans', sans-serif; }
+  font-family: 'Oleo Script Swash Caps', cursive; }
 
 .portada__somosnosotros {
   display: flex;
