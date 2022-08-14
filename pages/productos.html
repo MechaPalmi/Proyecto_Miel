@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,200&family=Roboto&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Cabin+Sketch&family=Oleo+Script+Swash+Caps&family=Rye&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap" rel="stylesheet">
     <!-- icono -->
     <link rel="shortcut icon" href="../resourses/favicon.ico" type="image/x-icon">
      <!-- ANIMACION -->
@@ -46,8 +47,8 @@
                       </li>
                     </ul>
                     <form class="d-flex" role="search">
-                      <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                      <button class="btn btn-outline-success" type="submit">Search</button>
+                      <input class="form-control me-2" type="search" placeholder="escribí acá" aria-label="Search">
+                      <button class="btn btn-outline-success" type="submit">Buscar</button>
                     </form>
                   </div>
                 </div>
@@ -56,7 +57,9 @@
     <main>
         <section>
         <h1 class="titulo__principal">Nuestros Productos</h1><!-- Productos en venta -->
-        <p class="m-3"> Conozca la gran variedad de productos que tenemos disponibles para usted.</p>
+        <div>
+          <p class="parrafo">Conozca la gran variedad de productos que tenemos disponibles para ustedes.</p>
+        </div>
         </section>
         <section>
           <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
@@ -124,25 +127,27 @@
         </section>
     </main>
     <footer> <!-- pie de pagina -->
-        <div class="fotter__indice">
-            <ul>
-                <li><a href="../pages/index.html">Inicio</a></li>
-                <li><a href="sobre-nosotros.html">Sobre Nosotros</a></li>
-                <li><a href="productos.html">Productos</a></li>
-                <li><a href="conservacion.html">Conservacion</a></li>
-                <li><a href="contacto.html">Contacto</a></li>
-            </ul>  
-        </div>
-        <div class="footer__derechos">
+      <nav class="nav flex-column">
+        <a class="nav-link link-dark active" aria-current="page" href="../index.html">Inicio</a>
+        <a class="nav-link link-dark" href="sobre-nosotros.html">Sobre Nosotros</a>
+        <a class="nav-link link-dark" href="productos.html">Productos</a>
+        <a class="nav-link link-dark" href="conservacion.html">Conservación</a>
+        <a class="nav-link link-dark" href="contacto.html">Contacto</a>
+      </nav>
+      <div class="footer__derechos">
+      </div>
         <div class="footer__redes">
+          <h4>Seguinos en nuestras redes</h4>
             <a href="https://es-la.facebook.com/"><img class="footer__iconos" src="../resourses/facebook-brands.svg"></a>
             <a href="https://www.instagram.com/"><img class="footer__iconos" src="../resourses/instagram-brands.svg"></a>
             <a href="https://twitter.com/?lang=es"><img class="footer__iconos" src="../resourses/twitter-brands.svg"></a>
-            <h4>Síguenos en nuestras redes</h4>
         </div>
         <div class="footer__derechos">
             <span>Miel (c) Todos los derechos reservados 2022</span>
         </div>
+        <div class="position-relative d-none d-lg-block">
+          <img class="w-30 p-3 position-absolute bottom-0 start-50 translate-middle-x" src="../resourses/android-chrome-192x192.png">
+      </div>
     </footer>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>

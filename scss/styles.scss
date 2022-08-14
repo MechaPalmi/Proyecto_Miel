@@ -20,6 +20,13 @@ a :hover{
 .carrousel__altura{
     height: 700px;
 }
+.panal__altura{
+    height: 650px;
+}
+.card-text{
+text-size-adjust: 2rem;
+font-family:'Roboto Slab', serif;  
+}
 .footer__iconos{/* redes sociales */
     width: 35px; /* ancho icono redes */
     height: 35px;
@@ -68,26 +75,26 @@ header{
     margin: auto;
 }
 body {
-    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Roboto Slab', serif;
     background-color: $color-principal
 }
 .parrafo{
     background-color: rgb(248, 228, 99);
-    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Roboto Slab', serif;
     padding: 0 10px;
     text-align: center;
 }
 .parrafo__sobrenosotros {
-    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Roboto Slab', serif;
     color: black;
 }
 .proteger{
     background-color: $color-principal;
-    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Roboto Slab', serif;
     color: black;
 }
 .h1 {
-    font-family: 'Oleo Script Swash Caps', cursive;
+    font-family: 'Roboto Slab', serif;
 }
 .portada__somosnosotros{
     display: flex;
@@ -193,6 +200,7 @@ body {
     footer {/* footer */
             grid-template-areas: "indice" 
                                 "redes"
-                                "derechos";
+                                "derechos"
+                                "position-relative";
         }
     }
