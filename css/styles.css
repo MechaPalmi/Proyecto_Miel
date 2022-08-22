@@ -112,10 +112,13 @@ a :hover {
   color: black; }
 
 .carrousel__altura {
-  height: 700px; }
+  height: 500px;
+  width: auto; }
 
 .panal__altura {
-  height: 650px; }
+  /* imagen panal */
+  height: 500px;
+  height: auto; }
 
 .card-text {
   text-size-adjust: 2rem;
